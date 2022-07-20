@@ -1,0 +1,9 @@
+#train {
+    position: relative;
+    cursor: pointer;
+    left: 0px;
+  }
+
+.distance{
+  background-color: pink;
+}
