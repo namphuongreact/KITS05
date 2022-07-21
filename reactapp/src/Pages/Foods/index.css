@@ -1,0 +1,29 @@
+.foods-header{
+    background-color: black;
+    color:white;
+    font-size: 50px;
+    height: 100px;
+
+}
+/*------------------------------------*/
+.foods-item{
+    display: flex;
+    background-color: #f1f1f1 ;
+    margin: 10px;
+}
+
+.foods-item-image1{
+    margin: 20px;
+}
+
+div.foods-item-image1{
+    flex-grow: 1;
+    /*border: 2px red solid;*/
+}
+
+div.foods-item-name1{
+    flex-grow: 2;
+    /*border: 2px red solid;*/
+}
+
+/*------------------------------------*/

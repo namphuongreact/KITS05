@@ -1,0 +1,33 @@
+/*Menu*/
+.welcome-menu-container{
+    background-color: #ffffff;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-menu-container > div{
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/*-------------------------------------*/
+/*Item của menu*/
+.welcome-menu-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-menu-item-container > div{
+    /*border: 2px red solid;*/
+    border: 2px white solid; /*#f1f1f1 */
+}
+
+.welcome-menu-item-container > div img {
+    border-radius: 50%;
+}
