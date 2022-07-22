@@ -1,17 +1,17 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Welcome } from './Pages/Welcome';
-import { Foods } from './Pages/Foods';
 import { Festivals } from './Pages/Festivals';
 import { Menu } from './Components/Menu';
 import { FamousPlaces } from './Pages/FamousPlaces';
-//import { Test } from './Pages/Test';
+import { Foods} from './Pages/Foods';
+
 
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
       <Menu/>
         <Routes>
           <Route path="/" element={<Welcome/>} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="/festivals" element={<Festivals/>} />
           <Route path="/famous_places" element={<FamousPlaces/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

@@ -5,7 +5,7 @@
 	width: 85vmin;
 	height: 25em;
 	border: 8px solid;
-	border-image: linear-gradient(-50deg, #000000, rgb(44, 5, 5)) 1;
+	border-image: linear-gradient(-50deg, #ffffff, rgb(22, 4, 4)) 1;
 	margin: 2rem auto;
 	transition: .3s ease-in-out;
 	position: relative;
@@ -116,4 +116,11 @@
 }
 .wrap2:hover .dots .dot {
 	background: white;
+}
+
+div.overlay-content2 > h3 {
+	font-size: 30px;
+	text-align: center;
+	color: rgb(223, 214, 91);
+	font-family: "Times New Roman", Times, serif;
 }

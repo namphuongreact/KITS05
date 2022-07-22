@@ -18,6 +18,7 @@ h3 {
 	font-size: 30px;
 	text-align: center;
 	color: rgb(197, 130, 130);
+	font-family: "Times New Roman", Times, serif;
 }
 p {
 	font-size: max(10pt, 2.5vmin);
@@ -33,7 +34,7 @@ p {
 	width: 85vmin;
 	height: 25em;
 	border: 8px solid;
-	border-image: linear-gradient(-50deg, #0d701d, rgb(12, 60, 10)) 1;
+	border-image: linear-gradient(-50deg, #e4e9e4, rgb(30, 71, 18)) 1;
 	margin: 2rem auto;
 	transition: .3s ease-in-out;
 	position: relative;

@@ -35,9 +35,9 @@ export function Distance() {
     }
 
     return (
-        <div>
+        <div style={{height:"100%"}}>
             <div className="distance">
-                <img id="train" src="https://js.cx/clipart/train.gif" onLoad={()=>imageClick()}></img>
+                <img id="train" src="https://js.cx/clipart/train.gif" onLoad={()=>imageClick()} style={{height:"100%"}}></img>
             </div>
 
             <div className="distance-bn-hn">

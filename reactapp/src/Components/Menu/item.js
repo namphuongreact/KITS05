@@ -18,7 +18,7 @@ export function Item({image, name}){
 
     return(
         <div className="welcome-menu-item-container">
-            <div><img src={image} width="355px" height="340px" onClick={viewDetail}/></div>
+            <div><img src={image} width="115px" height="115px" onClick={viewDetail}/></div>
             <div onClick={viewDetail}>{name}</div>
         </div>
     )

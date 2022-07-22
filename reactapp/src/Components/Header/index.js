@@ -2,7 +2,7 @@ import "./index.scss";
 
 export function Header (){
     return(
-        <div>
+        <div style={{height:"100%"}}>
             <div className="header-container">
                 
                 <h1>BẮC NINH</h1>
