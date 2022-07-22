@@ -47,7 +47,7 @@ export function Festivals() {
             <div className="wrap animate pop">
                 <div className="overlay">
                     <div className="overlay-content animate slide-left delay-2">
-                        <h3 className="animate slide-left pop delay-4">Lễ hội chùa Phật Tích</h3>
+                        <h3 className="animate slide-left pop delay-4">Lễ hội Chùa Phật Tích</h3>
                     </div>
                     <div className="image-content-ba animate slide delay-5"></div>
                     <div className="dots animate">

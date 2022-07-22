@@ -1,98 +1,119 @@
-.body2{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    min-height: 100vh;
-    background: #212121;
-    font-family: sans-serif;
-  }
-  .box{
-    width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 15px;
-    margin: 0 auto;
-  }
-  .card{
-    position: relative;
-    width: 300px;
-    height: 350px;
-    background: #fff;
-    margin: 0 auto;
-    border-radius: 4px;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
-  }
-  .card:before,
-  .card:after
-  {
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    background: #fff;
-    transition: 0.5s;
-    z-index:-1;
-  }
-  .card:hover:before{
-  transform: rotate(20deg);
-  box-shadow: 0 2px 20px rgba(0,0,0,.2);
-  }
-  .card:hover:after{
-  transform: rotate(10deg);
-  box-shadow: 0 2px 20px rgba(0,0,0,.2);
-  }
-  .card .imgBx{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  background: #222;
-  transition: 0.5s;
-  z-index: 1;
-  }
-  
-  .card:hover .imgBx
-  {
-    bottom: 80px;
-  }
+.wrap2 {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 85vmin;
+	height: 25em;
+	border: 8px solid;
+	border-image: linear-gradient(-50deg, #000000, rgb(44, 5, 5)) 1;
+	margin: 2rem auto;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay2 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: #000000;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay-content2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#2459ae 5%,
+      	rgb(185, 255, 185) 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
 
-  .card .imgBx img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
+.image-content-bon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-bac-ninh-13.jpg?tr=dpr-2,w-675");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+.image-content-nam {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-bac-ninh-22.jpg?tr=dpr-2,w-675");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+.image-content-sau {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-bac-ninh-2-819x1024.jpg?tr=dpr-2,w-675");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+/*-----------------------------------*/
+.image-content-bay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-bac-ninh-10.jpg?tr=dpr-2,w-675");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
 
-  .card .details{
-      position: absolute;
-      left: 10px;
-      right: 10px;
-      bottom: 10px;
-      height: 60px;
-      text-align: center;
-  }
+.image-content-tam {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-bac-ninh-9-1024x597.jpg?tr=dpr-2,w-675");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+/*------------------------------*/
+.wrap2:hover .overlay2
+ {
+	transform: translateX(-60vmin);
+}
+.wrap2:hover .image-content {
+	width: 30vmin;
+}
+.wrap2:hover .overlay-content2 {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+}    
 
-  .card .details h2{
-   margin: 0;
-   padding: 0;
-   font-weight: 600;
-   font-size: 20px;
-   color: #777;
-   text-transform: uppercase;
-  } 
-
-  .card .details h2 span{
-  font-weight: 500;
-  font-size: 16px;
-  color: #f38695;
-  display: block;
-  margin-top: 5px;
-   } 
+.wrap2:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap2:hover .dots .dot {
+	background: white;
+}

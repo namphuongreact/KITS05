@@ -5,6 +5,7 @@ import { Foods } from './Pages/Foods';
 import { Festivals } from './Pages/Festivals';
 import { Menu } from './Components/Menu';
 import { FamousPlaces } from './Pages/FamousPlaces';
+//import { Test } from './Pages/Test';
 
 
 function App() {
